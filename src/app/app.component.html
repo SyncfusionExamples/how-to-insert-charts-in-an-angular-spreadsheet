@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <button class="e-btn" style="margin: 5px;" (click)="btnClick()">Delete Chart</button>
+  <ejs-spreadsheet #spreadsheet 
+    (created)="onCreated()" 
+    [height]="500">
+    <e-sheets>
+      <e-sheet>
+        <e-rows>
+          <e-row>
+            <e-cells>
+              <e-cell [index]="6" [chart]="chart"></e-cell>
+            </e-cells>
+          </e-row>
+        </e-rows>
+        <e-ranges>
+            <e-range [dataSource]="data"></e-range>
+        </e-ranges>
+        <e-columns>
+          <e-column [width]=80></e-column>
+          <e-column [width]=75></e-column>
+          <e-column [width]=75></e-column>
+          <e-column [width]=75></e-column>
+          <e-column [width]=75></e-column>
+        </e-columns>
+      </e-sheet>
+    </e-sheets>
+  </ejs-spreadsheet>
+</div>
