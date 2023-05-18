@@ -5,7 +5,7 @@
              :taskFields="taskFields"
              :treeColumnIndex="1"
              :selectionSettings="selectionOptions"
-             :allowSelection="false"
+             :allowSelection="true"
              :height="450">
     <e-columns>
       <e-column field="TaskID" headerText="Task ID" width="120" textAlign="Right"></e-column>
