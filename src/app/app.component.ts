@@ -3,9 +3,7 @@ import { SpreadsheetComponent, getFormatFromType, ChartModel, getCell, getRangeI
 import {GDPData} from './data';
 @Component({
   selector: 'app-root',
-    imports: [
-    SpreadsheetAllModule
-  ],
+  standalone: false,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
