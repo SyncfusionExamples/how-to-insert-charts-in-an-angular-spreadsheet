@@ -1,8 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
-import { SpreadsheetComponent, getFormatFromType, ChartModel, getCell, getRangeIndexes, SheetModel } from '@syncfusion/ej2-angular-spreadsheet';
+import { SpreadsheetComponent, getFormatFromType, ChartModel, getCell, getRangeIndexes, SheetModel, SpreadsheetAllModule } from '@syncfusion/ej2-angular-spreadsheet';
 import {GDPData} from './data';
 @Component({
   selector: 'app-root',
+  standalone: false,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
